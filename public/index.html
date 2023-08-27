@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Evaluator</title>
+    <link rel="stylesheet" href="table.css">  
+    <link rel="stylesheet" href="leftAnimation.css"> 
+    <link rel="stylesheet" href="homemenu.css">
+    <link rel="stylesheet" href="feature.css">
+    <link rel="stylesheet" href="userguide.css">
+</head>
+
+<body>
+    <div class="mainscreen">
+    <div class="left">
+        <div class="animationLeft">
+            <div class="card">
+                <span></span>
+                <h1>URL</h1>
+            </div>
+            <!-- <div class="button">
+                <span>Login</span>
+                <button></button>
+            </div> -->
+        </div>
+        
+        <div class="gridleft">
+        <div class="Home" class="menubutton">
+          <a class="menu" href="#Homesection">Home</a>
+        </div>
+        <div class="usermanual" class="menubutton">
+          <a class="menu" href="#">User Manual</a>
+        </div>
+        <div class="feature" class="menubutton">
+          <a class="menu" href="#featuresection">Feature</a>
+        </div>
+    </div>
+    
+    
+
+
+    </div>
+    <div class="right">
+         
+        <section id="Homesection">
+        <div class="Homemenu">
+            <div class="Homemenu1">
+                <h1>Backend task</h1>
+            </div>
+            <div class="Homemenu2">
+                <p>A server that responds to mathematical operations sent via URL. it also maintains a history of the last 20 operations performed on the server.</p>
+            </div>
+            <div class="Homemenu3">
+                <img id="backendImg" src="img/backend.png" alt="backendImg">
+            </div>
+        </div>
+         </section>
+
+        <div class="Usermenual">
+            <div class="usermenual1">
+                <h1 id="blueHead">How to Use the Program</h1>
+            </div>
+            <div class="usermenual2">
+                <img src="img/address-bar.png" alt="addressimg">
+            </div>
+
+
+
+           <div class="usermenual3">
+            <h1 id="blueHead">Steps to Follow:</h1>
+            <p>1. download and extract the files.</p>
+            <p>2. open terimal and the following command to install modules: npm i</p>
+            <p>3. run the index.js file using the command: node index.js</p>
+            <p>4. now, open browser and in address bar search: localhost:3000 opens the homepage</p>
+            <p>5. for every valid url expression: Json object is returned</p>
+            <p>6. localhost:3000/history : shows the last 20 operations performed with their answers.</p>
+            <p>7. for any invalid url : error 404 page is rendere</p>
+        </div>
+        </div>
+       
+        <section id="featuesection"> 
+        <div class="featuremenu">
+            <div class="feature1">
+                <h1>Features</h1>
+            </div>
+            <div class="feature2">
+                <p>Let’s assume your server is at: localhost:3000. Here’s some sample requests:
+                </p>
+            </div>
+
+            <div class="feature3">               
+                <img id="featureimg" src="img/feature.png" alt="feature">
+            </div>
+        </div>
+         </section>
+         
+    </div>
+ </div>
+
+
+ 
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+<!-- <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: black;
+        color: white;
+        width: 100%;
+        font-size: 26px;
+    }
+</style> -->
+
+
+
+
+<!-- <div style=" margin: 40px auto; padding: 20px; width: 100%; height: 100vh; background-color: black; ">
+    <div style="width: 80%; height: 100%; margin: auto;">
+        <h1 style="text-align: center;">Welcome to the URL Evaluator site</h1>
+        <hr style="width: 80%; margin: auto;">
+        <hr style="width: 80%; margin: auto;">
+        <h3 style="width: 80%; margin: 40px auto 0 auto; ">What it does?</h3>
+        <p style="width: 70%; margin: 40px auto;">Just type your expression in the address bar after shown below in the image.
+            JSON object will be returned with the question(formed by parsing the url expression) and answer.
+        </p>
+
+        <div style="width: 60%; margin: auto; padding-bottom: 40px;">
+            <img src="./img/address-bar.png" alt="address-bar" height="auto" width="100%">
+            <h3 style="width: 80%; margin: 40px auto 0 auto; text-align: center;">Below are the endpoint list and demo: </h3>
+            <hr style="width: 80%; margin: 10px auto 30px;">
+            <img src="./img/endpoint-list.png" alt="endpoint-list" height="auto" width="100%">
+        </div>
+    </div>
+</div> -->

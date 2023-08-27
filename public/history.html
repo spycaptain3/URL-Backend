@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            width: 100%;
+            height: 100%;
+            font-size: 20px;
+        }
+
+        #style-2::-webkit-scrollbar-track {
+            -webkit-box-shadow: transparent;
+            border-radius: 10px;
+            background-color: #F5F5F5;
+        }
+
+        #style-2::-webkit-scrollbar {
+            width: 12px;
+            background-color: transparent;
+        }
+
+        #style-2::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            -webkit-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+            background-color: #D62929;
+        }
+
+        .logdata {
+            padding: 15px 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div style=" margin: 40px auto; padding: 20px; width: 100%; background-color: black; ">
+        <div style="width: 80%; margin: auto;">
+            <h1 style="text-align: center;">Server Logs</h1>
+            <hr style="width: 150px; margin: 0 auto 30px auto;">
+        </div>
+        <div className="api-data" id="style-2"
+            style="width: 80%; margin: auto; height: 500px; color: white; background: #252B48; border-radius: 5px; overflow-y: scroll;">
+            <ol id="json-logging" style="margin: 20px 50px;">
+
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        const port = 3000;
+        const api_url = `http://localhost:${port}/logFile`;
+
+        async function getapi(url) {
+            const res = await fetch(url);
+            var data = await res.json();
+            console.log(data);
+
+            li(data)
+        }
+
+        getapi(api_url);
+
+        function li(data) {
+            var listNode = document.getElementById('json-logging');
+            for (i = 0; i < data.length; i++) {
+                var liNode = document.createElement("LI");
+                var preNode = document.createElement("pre");
+                preNode.innerHTML = JSON.stringify(data[i], null, 2);
+                liNode.classList.add('logdata');
+                liNode.appendChild(preNode);
+                listNode.appendChild(liNode);
+            }
+            console.log(listNode);
+        }
+    </script>
+</body>
+
+</html>

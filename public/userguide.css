@@ -1,0 +1,24 @@
+.Usermenual{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 160px;
+    gap:40px;
+    /* background-color: rgb(32 52 71); */
+    background-color: rgb(32 52 71);
+}
+#blueHead{
+    color: rgb(94 163 239);
+    margin-top: 80px;
+    margin-left: 20px;
+    font-size: 2rem;
+}
+.usermenual3{
+    margin-left: 20px;
+    color: white;
+    font-size: 1.5rem;
+}
+.usermenual2{
+    margin-left: 20px;
+}

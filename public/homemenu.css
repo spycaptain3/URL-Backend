@@ -1,0 +1,31 @@
+.Homemenu1{
+    width: 100%;
+    height: 10vh;
+    color: rgb(94 163 239);
+    margin-top: 80px;
+    margin-left: 180px;
+    font-size: 1.5rem;
+}
+.Homemenu2{
+    width: 80%;
+    height: auto;
+    color: azure;
+    font-size: 1.5rem;
+    margin-left: 180px;
+
+}
+
+#backendImg{
+  width: 300px;
+  width: 300px;
+}
+
+.Homemenu3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: aquamarine; */
+    align-items: center;
+    margin-top: 100px;
+}
+
